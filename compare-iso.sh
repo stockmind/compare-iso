@@ -23,7 +23,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Trying to mount $ISO1 ..."
     hdiutil attach -mountpoint ./iso1 "$ISO1"
     echo "Trying to mount $ISO2 ..."
-	hdiutil attach -mountpoint ./iso2 "$ISO2"
+    hdiutil attach -mountpoint ./iso2 "$ISO2"
 else
     # System Unknown.
     echo "System unknown! Will try a standard mount."
@@ -42,7 +42,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
     hdiutil detach ./iso1
-	hdiutil detach ./iso2
+    hdiutil detach ./iso2
 else
     # System Unknown.
     echo "System unknown! Will try a standard mount."
