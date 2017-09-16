@@ -1,8 +1,8 @@
-# Compare ISO
+# Compare ISO
 
 Scripts for macOS (OSX) and Linux to mount and compare two ISO.
 
-## macOS
+## macOS
 
 Install dependencies with brew
 
