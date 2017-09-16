@@ -1,8 +1,8 @@
-# Compare ISO
+# Compare ISO
 
-Scripts for macOS (OSX) and Linux to mount and compare two ISO.
+Scripts for macOS (OSX) and Linux to mount and compare two ISOs.
 
-## macOS
+## macOS
 
 Install dependencies with brew
 
@@ -16,7 +16,7 @@ Install dependencies with brew
 
     sudo apt -y install squashfs-tools rsync
 
-### ArchLinux
+### Arch :
 
 	sudo pacman -Sy squashfs-tools rsync
 
