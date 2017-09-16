@@ -1,6 +1,6 @@
 # Compare ISO
 
-Scripts for macOS (OSX) and Linux to mount and compare two ISO.
+Scripts for macOS (OSX) and Linux to mount and compare two ISOs.
 
 ## macOS
 
