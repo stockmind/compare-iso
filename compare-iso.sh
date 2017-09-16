@@ -49,3 +49,6 @@ else
     umount ./iso1
     umount ./iso2
 fi
+
+rm -dfr iso1
+rm -dfr iso2

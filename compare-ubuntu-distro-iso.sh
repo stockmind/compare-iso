@@ -29,3 +29,8 @@ umount ./iso1
 umount ./iso2
 umount ./filesystem1
 umount ./filesystem2
+
+rm -dfr iso1
+rm -dfr iso2
+rm -dfr filesystem1
+rm -dfr filesystem2
