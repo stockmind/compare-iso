@@ -16,7 +16,7 @@ Install dependencies with brew
 
     sudo apt -y install squashfs-tools rsync
 
-### ArchLinux
+### Arch :
 
 	sudo pacman -Sy squashfs-tools rsync
 
