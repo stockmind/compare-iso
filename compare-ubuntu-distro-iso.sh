@@ -69,7 +69,7 @@ if [[ "$EXTRACT" = true ]]; then
     # Read files one by one and copy them on destination folder
     while IFS='' read -r line || [[ -n "$line" ]]; do
         echo "Copy file: $line"
-        cp --parents "$SOURCEFOLDER""$line" "$DESTINATIONFOLDER"
+        cp --parents "$SOURCEFOLDER"/"$line" "$DESTINATIONFOLDER"
     done < "$FILE"
 
 fi
