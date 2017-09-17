@@ -29,7 +29,7 @@ Execute script as root and pass ISO filenames as arguments
 
     ./compare-iso.sh <iso1> <iso2>
 
-A "isodiff.txt" file containing the diffs will be generated on current directory.
+An "isodiff.txt" file containing the diffs will be generated on current directory.
 Mount of hybrid image on macOs is not yet supported.
 The following script "compare-ubuntu-distro-iso.sh" works only on Linux system for this reason.
 
@@ -37,8 +37,8 @@ If you want to compare two different Ubuntu distributions iso run this:
 
     ./compare-ubuntu-distro-iso.sh <iso1> <iso2> [extract [first]]
 
-A "isodiff.txt" file containing the base image diffs will be generated on current directory.
-A "filesystemdiff.txt" file containing the diffs of underlying filesystem of images will be generated on current directory.
+An "isodiff.txt" file containing the base image diffs will be generated on current directory.
+An "filesystemdiff.txt" file containing the diffs of underlying filesystem of images will be generated on current directory.
 
 Arguments:
 
