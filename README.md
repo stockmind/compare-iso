@@ -32,8 +32,12 @@ Mount of hybrid image on macOs is not yet supported.
 
 If you want to compare two different Ubuntu distributions iso run this:
 
-    ./compare-ubuntu-distro-iso.sh
-
+    ./compare-ubuntu-distro-iso.sh <iso1> <iso2> [extract [first]]
 
 A "isodiff.txt" file containing the base image diffs will be generated on current directory.
 A "filesystemdiff.txt" file containing the diffs of underlying filesystem of images will be generated on current directory.
+
+Optional arguments:
+
+	extract - Optional argument, will extract only the different file from <iso2> in a folder named "extracted"
+	first - Optional argument, must be used with "extract" argument. Force <iso1> as source for extract action.

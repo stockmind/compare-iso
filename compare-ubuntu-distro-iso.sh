@@ -6,7 +6,7 @@ if [ $EUID != 0 ]; then
     exit $?
 fi
 
-EXTRACT=true
+EXTRACT=false
 FIRST=false
 
 # Check arguments
@@ -56,20 +56,25 @@ sed -i '/total size/d' filesystemdiff.txt
 if [[ "$EXTRACT" = true ]]; then
     FILE="filesystemdiff.txt"
     DESTINATIONFOLDER="extracted"
-    SOURCEFOLDER="./filesystem2"
+    SOURCEFOLDER="filesystem2"
     
     # Clean previous run
     rm -frd "$DESTINATIONFOLDER"
     mkdir -p "$DESTINATIONFOLDER"
     
     if [[ "$FIRST" = true ]]; then
-        SOURCEFOLDER="./filesystem1"
+        SOURCEFOLDER="filesystem1"
     fi
     
     # Read files one by one and copy them on destination folder
     while IFS='' read -r line || [[ -n "$line" ]]; do
-        echo "Copy file: $line"
-        cp --parents "$SOURCEFOLDER"/"$line" "$DESTINATIONFOLDER"
+        echo "Extract file: $line"
+	# Copy file only if exist on ISO selected
+	if [[ -f "$SOURCEFOLDER"/"$line" ]]; then
+        	cp --parents "$SOURCEFOLDER"/"$line" "$DESTINATIONFOLDER"
+	else
+		echo "File non present on selected ISO. Must be on the other ISO."
+	fi
     done < "$FILE"
 
 fi
