@@ -17,7 +17,7 @@ for i in "$@" ; do
         continue
     fi
     if [[ $i == "first" ]] ; then
-        echo "Extract different files from first iso"
+        echo "Force extract from first iso, use with extract argument"
         FIRST=true
         continue
     fi
