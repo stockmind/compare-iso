@@ -71,7 +71,7 @@ if [[ "$EXTRACT" = true ]]; then
         echo "Extract file: $line"
 	# Copy file only if exist on ISO selected
 	if [[ -f "$SOURCEFOLDER"/"$line" ]]; then
-        	cp --parents "$SOURCEFOLDER"/"$line" "$DESTINATIONFOLDER"
+        	cp -a --parents "$SOURCEFOLDER"/"$line" "$DESTINATIONFOLDER"
 	else
 		echo "File non present on selected ISO. Must be on the other ISO."
 	fi
