@@ -38,7 +38,7 @@ If you want to compare two different Ubuntu distributions iso run this:
     ./compare-ubuntu-distro-iso.sh <iso1> <iso2> [extract [first]]
 
 An "isodiff.txt" file containing the base image diffs will be generated on current directory.
-An "filesystemdiff.txt" file containing the diffs of underlying filesystem of images will be generated on current directory.
+A "filesystemdiff.txt" file containing the diffs of underlying filesystem of images will be generated on current directory.
 
 Arguments:
 
